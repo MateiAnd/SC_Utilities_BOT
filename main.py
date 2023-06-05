@@ -300,10 +300,10 @@ async def organizare_refresher():
             _org_channel = await bot.fetch_channel(BOT_setup.ORG_CHANNEL)
             message = await _org_channel.fetch_message(org['Message_id'])
 
-            guild = await bot.fetch_guild(BOT_setup.GUILD_ID)
-            org_role = guild.get_role(org['Org_utils']['Part'])
+            # guild = await bot.fetch_guild(BOT_setup.GUILD_ID)
+            # org_role = guild.get_role(org['Org_utils']['Part'])
 
-            await org_role.delete()
+            # await org_role.delete()
             await message.delete()
 
             functions.data_updater(org_old=_org, org_new={})
