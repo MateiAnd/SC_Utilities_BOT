@@ -365,26 +365,26 @@ async def do_refresh_db():
     await populate_db(bot, BOT_setup.GUILD_ID)
 
 
-# @bot.event
-# async def on_member_remove(member):
-#     from datetime import datetime
-#     now = datetime.now()
-#     date_time_string = now.strftime("%d/%m/%Y %H:%M:%S")
-#     print(f"[{date_time_string}] {'—' * 2} A iesit - {member.name} {'—' * 5}")
-#     update_channel = await bot.fetch_channel(BOT_setup.PLAYER_UPDATES_CHANNEL)
-#     text = ''
-#     member_name = f'{member.nick if member.nick else member.name}'
-#     for role in member.roles:
-#         if '1102244192043942059' in str(role.id):
-#             text = f'Membrul __**{member_name}**__ a iesit si facea parte din <@&1102244192043942059>'
-#         elif '1102244836872032256' in str(role.id):
-#             text = f'Membrul __**{member_name}**__ a iesit si facea parte din <@&1102244836872032256>'
-#         elif '1102244973363081286' in str(role.id):
-#             text = f'Membrul __**{member_name}**__ a iesit si facea parte din <@&1102244973363081286>'
-#     if not text:
-#         text = f'Membrul __**{member_name}**__ a iesit'
-#
-#     new_message = await update_channel.send(content=f'{text}')
+@bot.event
+async def on_member_remove(member):
+    from datetime import datetime
+    now = datetime.now()
+    date_time_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    print(f"[{date_time_string}] {'—' * 2} A iesit - {member.name} {'—' * 5}")
+    update_channel = await bot.fetch_channel(BOT_setup.PLAYER_UPDATES_CHANNEL)
+    # text = ''
+    member_name = f'{member.nick if member.nick else member.name}'
+    # for role in member.roles:
+    #     if '1102244192043942059' in str(role.id):
+    #         text = f'Membrul __**{member_name}**__ a iesit si facea parte din <@&1102244192043942059>'
+    #     elif '1102244836872032256' in str(role.id):
+    #         text = f'Membrul __**{member_name}**__ a iesit si facea parte din <@&1102244836872032256>'
+    #     elif '1102244973363081286' in str(role.id):
+    #         text = f'Membrul __**{member_name}**__ a iesit si facea parte din <@&1102244973363081286>'
+    # if not text:
+    text = f'Membrul __**{member_name}**__ a iesit'
+
+    new_message = await update_channel.send(content=f'{text}')
 
 
 '''
