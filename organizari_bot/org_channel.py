@@ -244,7 +244,8 @@ class OrgEmbed(discord.Embed):
                        value=reserve_list,
                        inline=True)
 
-        self.set_thumbnail(url=r'https://cdn11.bigcommerce.com/s-5d127/images/stencil/1280x1280/products/781/1383/FS72927-24__72706__76945.1560535870.jpg?c=2')
+        self.set_thumbnail(url=BOT_setup.TIER_ICONS[org_dict['Type']])
+        # r'https://cdn11.bigcommerce.com/s-5d127/images/stencil/1280x1280/products/781/1383/FS72927-24__72706__76945.1560535870.jpg?c=2'
 
         self.set_footer(text=f"Creat de {org_dict['Participants']['Author'][0]}")
 

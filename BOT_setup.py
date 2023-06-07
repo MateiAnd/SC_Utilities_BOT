@@ -54,28 +54,27 @@ ORG_DETAILS = {
         "ROLE_ID": None,
         "HEX_COLOR": 0xffdd00,
         "MAX_PLAYERS": 4,
-        "ACTIVE_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF.png",
-        "EXPIRED_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF_exp.png"
     },
     "Heltide": {
         "ROLE_ID": None,
         "HEX_COLOR": 0xff4400,
         "MAX_PLAYERS": 4,
-        "ACTIVE_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF.png",
-        "EXPIRED_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF_exp.png"
     },
     "PVP": {
         "ROLE_ID": None,
         "HEX_COLOR": 0x003cff,
         "MAX_PLAYERS": 4,
-        "ACTIVE_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF.png",
-        "EXPIRED_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF_exp.png"
     },
     "Worldboss": {
         "ROLE_ID": None,
         "HEX_COLOR": 0x00ff91,
         "MAX_PLAYERS": 12,
-        "ACTIVE_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF.png",
-        "EXPIRED_IMG": "http://buzea.pro/buzea.pro/d2ro/Assets/KF_exp.png"
     }
+}
+
+TIER_ICONS = {
+    "Tier 1": r'https://cdn.discordapp.com/attachments/1086761501852958820/1116047016817078332/1.png',
+    "Tier 2": r'https://cdn.discordapp.com/attachments/1086761501852958820/1116047028825358346/2.png',
+    "Tier 3": r'https://cdn.discordapp.com/attachments/1086761501852958820/1116047040313565284/3.png',
+    "Tier 4": r'https://cdn.discordapp.com/attachments/1086761501852958820/1116047049729786037/4.png'
 }
